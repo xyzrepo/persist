@@ -1,0 +1,48 @@
+{
+  "name": "@xyz/persist",
+  "version": "0.0.1-alpha",
+  "private": false,
+  "description": "Vuex Persisted State for Nuxt.js",
+  "repository": "xyzrepo/persist",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Baker Shamlan <root@xyz.dev>"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint && jest"
+  },
+  "dependencies": {
+    "deepdash-es": "^5.3.9",
+    "lodash": "^4.17.21",
+    "vue": "^2.6.14",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
