@@ -21,7 +21,6 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "deepdash-es": "^5.3.9",
     "lodash": "^4.17.21",
     "vue": "^2.6.14",
     "vuex": "^3.6.2",
