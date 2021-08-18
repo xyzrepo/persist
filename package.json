@@ -1,6 +1,6 @@
 {
   "name": "@xyz/persist",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "Vuex Persisted State for Nuxt.js",
   "repository": "xyzrepo/persist",
