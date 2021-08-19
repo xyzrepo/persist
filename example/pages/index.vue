@@ -9,11 +9,15 @@
     <br>
     <strong>NestedTest 2:</strong> {{ data.anotherTest }}
     <input v-model="data.anotherTest" type="checkbox" name="test2">
+    <button @click="resetState()">
+      Clear
+    </button>
   </div>
 </template>
 
 <script>
 export default {
+  persist: true,
   data () {
     return {
       test: false,
@@ -23,12 +27,8 @@ export default {
       }
     }
   },
-  watch: {
-    $data: {
-      handler () { this.saveState() },
-      deep: true
-    }
-  },
-  mounted () { this.restoreState() }
+  mounted () {
+    console.log(process.env.DEBUG)
+  }
 }
 </script>
